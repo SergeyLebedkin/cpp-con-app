@@ -4,8 +4,8 @@
             "compilerPath": "g++",
             "name": "winmake",
             "intelliSenseMode": "gcc-x64",
-            "cStandard": "c11",
-            "cppStandard": "c++14",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
             "includePath": [
                 "./include"
             ],

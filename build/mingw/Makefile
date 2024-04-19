@@ -7,12 +7,12 @@ MKDIR_P = mkdir -p
 RM_RF = rm -rf
 
 # global objects path (please, DO NOT use "./" in path, f.e "./obj/app", but use ONLY "obj/app")
-OBJ_PATH = .obj
+OBJ_PATH = .bin/obj
 
 # c++ compiling
 APP_CXX      = g++
-APP_CXXFLAGS = -g -Wall -std=c++14
-APP_ASMFLAGS = -masm=intel -Wall -std=c++14
+APP_CXXFLAGS = -g -Wall -std=c++17
+APP_ASMFLAGS = -masm=intel -Wall -std=c++17
 APP_DEFINES  =                      \
     -D _DEBUG
 APP_INCLUDES =                      \
@@ -22,7 +22,7 @@ APP_LD        = g++
 APP_LDFLAGS   = -mconsole
 APP_LIBRARIES = -L ./lib/x64
 # targets
-APP_TARGET_PATH = ./
+APP_TARGET_PATH = .bin
 APP_TARGET_NAME = $(APP_TARGET_PATH)/cpp-con-app.exe
 # app sources
 APP_SOURCES_PATH = src
